@@ -1,0 +1,16 @@
+{% extends "movieReview/header.html" %}
+
+{% block content%}
+    {% include 'movieReview/includesnippet.html' %}
+    {% for movie in MovieName %}
+        {% if movie == 'Braveheart' %}
+            <h1>{{movie}} is my favourite movie.</h1>
+        {% else %}
+        <h1>{{movie}}</h1>
+        {% endif %}
+
+    {% endfor %}
+    <p>Hello, This is our first HTML Page</p>
+{% endblock %}
+
+
